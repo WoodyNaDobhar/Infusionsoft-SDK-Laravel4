@@ -8,19 +8,19 @@ Infusionsoft's API is business critical and being a control freak I wanted to ta
 
 Installation Instructions
 ==================
-Install the [package](https://packagist.org/packages/spoolphiz/infusionsoft) using composer and add the following entry to the array of service providers found in app/config/app.php:
+Install the [package](https://packagist.org/packages/woodynadobhar/infusionsoft) using composer and add the following entry to the array of service providers found in app/config/app.php:
 
-`'Spoolphiz\Infusionsoft\InfusionsoftServiceProvider',`
+`'WoodyNaDobhar\Infusionsoft\InfusionsoftServiceProvider',`
 
 Also, add the facade alias to aliases array found in the same file:
 
-`'Infusionsoft'	  => 'Spoolphiz\Infusionsoft\Facades\Infusionsoft',`
+`'Infusionsoft'	  => 'WoodyNaDobhar\Infusionsoft\Facades\Infusionsoft',`
 
 You'll also need to publish the config file to your app/config/ directory by running the following from command line in your project root:
 
-`php artisan config:publish spoolphiz/infusionsoft`
+`php artisan config:publish woodynadobhar/infusionsoft`
 
-This will copy the config file to app/config/packages/spoolphiz/infusionsoft/ where you must set up your Infusionsoft application name and API key.
+This will copy the config file to app/config/packages/woodynadobhar/infusionsoft/ where you must set up your Infusionsoft application name and API key.
 
 Usage
 ==================

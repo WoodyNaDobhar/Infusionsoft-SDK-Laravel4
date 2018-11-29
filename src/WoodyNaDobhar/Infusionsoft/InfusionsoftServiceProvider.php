@@ -1,8 +1,8 @@
 <?php 
-namespace Spoolphiz\Infusionsoft;
+namespace WoodyNaDobhar\Infusionsoft;
 
 use Illuminate\Support\ServiceProvider;
-use Spoolphiz\Infusionsoft\Infusionsoft;
+use WoodyNaDobhar\Infusionsoft\Infusionsoft;
 
 class InfusionsoftServiceProvider extends ServiceProvider {
 
@@ -20,9 +20,9 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('spoolphiz/infusionsoft');
+		$this->package('woodynadobhar/infusionsoft');
 		
-		//Config::package('spoolphiz/infusionsoft', __DIR__.'/../../../config');
+		//Config::package('woodynadobhar/infusionsoft', __DIR__.'/../../../config');
 	}
 
 	/**
@@ -33,12 +33,12 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		//load config file for package
-		//$this->app['config']->package('spoolphiz/infusionsoft', __DIR__.'/../../../config', 'spoolphiz/infusionsoft');
+		//$this->app['config']->package('woodynadobhar/infusionsoft', __DIR__.'/../../../config', 'woodynadobhar/infusionsoft');
 		
 		// Register 'infusionsoft' instance container to our Infusionsoft object
 		$this->app['infusionsoft'] = $this->app->share(function($app)
 		{
-			return new \Spoolphiz\Infusionsoft\Infusionsoft;
+			return new \WoodyNaDobhar\Infusionsoft\Infusionsoft;
 		});
 	}
 

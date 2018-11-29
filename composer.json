@@ -1,10 +1,14 @@
 {
-    "name": "spoolphiz/infusionsoft",
+    "name": "woodynadobhar/infusionsoft",
 	"description": "A port of Infusionsoft's PHP SDK to composer package for Laravel 4",
 	"authors": [
 	        {
 	            "name": "Alexander Manea",
 	            "email": "alexander.manea@gmail.com"
+	        },
+	        {
+	            "name": "Woody NaDobhar",
+	            "email": "woodynadobhar@hotmail.com"
 	        }
 	],
     "require": {
@@ -12,9 +16,8 @@
 		"illuminate/support": "4.2.x"
     },
 	"autoload": {
-		
 		"psr-0": {
-		            "Spoolphiz\\Infusionsoft": "src/"
+		    "WoodyNaDobhar\\Infusionsoft": "src/"
 		}
     },
 	"minimum-stability": "dev"

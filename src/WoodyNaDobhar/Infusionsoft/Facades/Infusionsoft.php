@@ -1,5 +1,5 @@
 <?php
-namespace Spoolphiz\Infusionsoft\Facades;
+namespace WoodyNaDobhar\Infusionsoft\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

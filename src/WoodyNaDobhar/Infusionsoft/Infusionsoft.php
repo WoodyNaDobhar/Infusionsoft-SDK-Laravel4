@@ -1,7 +1,7 @@
 <?php
-namespace Spoolphiz\Infusionsoft;
+namespace WoodyNaDobhar\Infusionsoft;
 use \Config;
-//use Spoolphiz\Infusionsoft\iSDK;
+//use WoodyNaDobhar\Infusionsoft\iSDK;
 /*
 This is hackish and a un-laravel way to handle the requirement of \iSDK but unfortunately the xmlrpc3.1 lib doesn't want to correctly encode values when run with a namespace. Will try to resolve this later. (Or maybe Infusionsoft will implement a proper RESTful API without the xmlrpc dependency)
 */
